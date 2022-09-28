@@ -397,7 +397,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 
 .teem-conteiner{
     padding-top:30px ;
-    padding-bottom:30px ;
+    padding-bottom:0;
    
 }
 
@@ -426,13 +426,35 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     letter-spacing: 0.03em;
     color: var(--ouwer-text-color);
 }
+.soc-teem{
+    padding: 0 0;
+    margin-top: 16px;
+    margin-bottom: 30px;
+ 
+}
 .icon-nav{
    display: flex;
    gap: 10px;
-   width: 44px;
-   height: 44px;
+   padding: 0 0;
+   margin-top: 16px;
+   margin-bottom: 30px;
+   justify-content: center;
 
-   
+}
+
+.soc-link-teem{
+    width: 44px;
+    height: 44px; 
+    border-radius: 50%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   fill: var(--icon-color)
+}
+.soc-item-teem :hover,
+.soc-item-teem :focus{
+background-color: var(--acent-color);
+fill: var(--background-color);
 }
 
    /* --------------------------------------- ПОСТІЙНІ КЛІЄНТИ-------------------- */
@@ -451,48 +473,36 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     color: var(--main-text-color);
 }
 .client-nav{
-    display: inline-flex;
+    display: flex;
     gap: 30px;
 
 
 }
-.client-list{
-   
+
+
+    .icon-client{
+
     width: 170px;
     height: 92px;
     background: #FFFFFF;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-repeat: no-repeat;
-    background-size: 106px 60px;
-    background-position:center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color);
+       
 }
-.client-nav :nth-child(1) {
-    background-image: url(../images/group\ \(1\).svg);}
 
-.client-nav :nth-child(2){
-    background-image: url(../images/group\ 2.svg);}
-
-.client-nav :nth-child(3){
-    background-image: url(../images/group\ 3.svg);}
-
-.client-nav :nth-child(4){
-    background-image: url(../images/group\ 4.svg);}
-
-.client-nav :nth-child(5){
-     background-image: url(../images/group\ 5.svg);}
-
-.client-nav :nth-child(6){
-    background-image: url(../images/group6.svg);}    
-
-
-
-
-
-
-
+.icon-client :hover,
+.icon-client :focus{
+    fill: var(--acent-color);
+   
+   
+    
+}
+  
 
                                                 /* FOOTER */
 .footer{
@@ -553,8 +563,16 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color:  var(--secondary-text-color);
 }
-
-.footer-nav{
+.footer-conteiner{
+    display: flex; 
+    align-items: center;
+  
+}
+.footer-info{
+    margin-right: 70px;
+}
+.footer-text{
+    margin-bottom: 20px;
   
     font-weight: 700;
 font-size: 14px;
@@ -564,14 +582,28 @@ text-transform: uppercase;
 color: var(--secondary-text-color);
 
 }
-.footer-conteiner{
-    display: flex; 
-    align-items: center;}
-
 
 .footer-item{
     display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0 0;
    
+}
+
+.soc-link{
+    width: 44px;
+    height: 44px; 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   fill: var(--secondary-text-color);
+}
+.soc-item :hover,
+.soc-item :focus{
+background-color: var(--acent-color);
 }
 
                                   /* portfolio */
@@ -638,8 +670,8 @@ color: var(--secondary-text-color);
  
 
 }
-.icon :hover,
-.icon :focus{
+.icon:hover,
+.icon:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
