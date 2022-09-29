@@ -114,7 +114,7 @@ html{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-l   letter-spacing: 0.03em;
+   letter-spacing: 0.03em;
     color: #000000;
 
    }
@@ -145,9 +145,6 @@ l   letter-spacing: 0.03em;
     margin-right: 50px;
    
 }
-.header-list :last-child{
-        margin-right: 0;
-}
 
 
 .header-link{
@@ -167,6 +164,10 @@ color: var(--main-text-color);
 }
 
 .header-mail{
+
+
+
+
    padding: 32px 0;
 display: inline-block;
 align-items: center;
@@ -179,7 +180,7 @@ color: var(--ouwer-text-color);
 
 }
 
-.header-mail::before {
+/* .header-mail::before {
     content: "";
     width: 16px;
     height: 12px;
@@ -190,9 +191,11 @@ color: var(--ouwer-text-color);
     background-size: contain;
     background-position:center;
     
-}
+} */
 
 .header-tel{
+
+
    padding: 32px 0;
 
 font-weight: 500;
@@ -202,17 +205,12 @@ letter-spacing: 0.02em;
 color: var(--ouwer-text-color);
 
 }
-.header-tel::before{
-    content: "";
-    width: 10px;
-    height: 16px;
+.header-icon{
+   
     margin-right: 10px;
-   align-self: center;
+   
+    justify-content: center;
 
-    background-image: url(../images/smartphone.svg);
-    display: inline-block;
-    background-size: contain;
-  
 }
 
 .list{
@@ -244,6 +242,10 @@ color: var(--ouwer-text-color);
 .subject{
 
     background-color: var(--background-footer-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
     text-align: center;
     padding: 200px 0;
   
@@ -445,16 +447,21 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 .soc-link-teem{
     width: 44px;
     height: 44px; 
+    background-color: var(--background-color);
     border-radius: 50%;
     display: flex;
    align-items: center;
    justify-content: center;
-   fill: var(--icon-color)
+   color: var(--icon-color);
 }
-.soc-item-teem :hover,
-.soc-item-teem :focus{
+.soc-teem-icon{
+    fill: currentColor;
+}
+
+.soc-link-teem:hover,
+.soc-link-teem:focus{
 background-color: var(--acent-color);
-fill: var(--background-color);
+color: var(--background-color);
 }
 
    /* --------------------------------------- ПОСТІЙНІ КЛІЄНТИ-------------------- */
@@ -475,18 +482,14 @@ fill: var(--background-color);
 .client-nav{
     display: flex;
     gap: 30px;
-
-
 }
-
-
-    .icon-client{
-
+.icon-client{
+    
     width: 170px;
     height: 92px;
-    background: #FFFFFF;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    background: #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     align-items: center;
@@ -495,13 +498,13 @@ fill: var(--background-color);
        
 }
 
-.icon-client :hover,
-.icon-client :focus{
-    fill: var(--acent-color);
-   
-   
+.icon-client:hover,
+.icon-client:focus{
+
+    border: 1px solid var(--acent-color);
+    fill: var(--acent-color);}
     
-}
+
   
 
                                                 /* FOOTER */
@@ -599,10 +602,13 @@ color: var(--secondary-text-color);
     display: flex;
    align-items: center;
    justify-content: center;
+  
+}
+.soc-link-icon{
    fill: var(--secondary-text-color);
 }
-.soc-item :hover,
-.soc-item :focus{
+.soc-link:hover,
+.soc-link:focus{
 background-color: var(--acent-color);
 }
 
