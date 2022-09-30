@@ -207,7 +207,7 @@ color: var(--ouwer-text-color);
 .header-icon{
    display: inline-block;
    justify-content: center;
-    gap: 10px;
+   margin-right: 10px;
     fill: var(--ouwer-text-color);
 
 
