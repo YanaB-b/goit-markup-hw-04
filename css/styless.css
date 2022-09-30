@@ -125,26 +125,16 @@ html{
    .header-item:last-child{
     margin-right: 0;
    }
-.conteiner-list{
-    margin-right: 50px;
-}
-.conteiner-list :last-child{
-        margin-right: 0;
-       
-}
-.header-list :hover,
-.header-list :focus{
-     color: var(--acent-color);
-     cursor: pointer;
+.header-list{
+    margin-right: 30px;
     
 }
-.current{
-    color: var(--acent-color);
+ .header-list:last-child {
+     margin-right: 0;
+       
 }
-.header-list {
-    margin-right: 50px;
-   
-}
+
+
 
 
 .header-link{
@@ -159,14 +149,8 @@ color: var(--main-text-color);
 
 }
 
-.current{
-    color: var(--acent-color);
-}
 
 .header-mail{
-
-
-
 
    padding: 32px 0;
 display: inline-block;
@@ -176,28 +160,12 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--ouwer-text-color);
-
-
 }
 
-/* .header-mail::before {
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-   
-    background-image: url(../images/envelope.svg);
-    display: inline-block;
-    background-size: contain;
-    background-position:center;
-    
-} */
-
 .header-tel{
-
-
    padding: 32px 0;
-
+   display: inline-block;
+  
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -205,13 +173,22 @@ letter-spacing: 0.02em;
 color: var(--ouwer-text-color);
 
 }
-.header-icon{
-   
-    margin-right: 10px;
-   
-    justify-content: center;
-
+.header-tel:hover,
+.header-tel:focus{
+     color: var(--acent-color);
+     cursor: pointer;
+    
 }
+.header-mail:hover,
+.header-mail:focus{
+     color: var(--acent-color);
+     cursor: pointer;
+    
+}
+.current{
+    color: var(--acent-color);
+}
+
 
 .list{
     list-style: none;
@@ -226,6 +203,27 @@ color: var(--ouwer-text-color);
 .link{
     text-decoration: none
 }
+
+.header-icon{
+   display: inline-block;
+   justify-content: center;
+    gap: 10px;
+    fill: var(--ouwer-text-color);
+
+
+}
+.header-mail:hover .header-icon,
+.header-mail:focus .header-icon{
+   fill: var(--acent-color);
+}
+.header-tel:hover .header-icon,
+.header-tel:focus .header-icon{
+    fill: var(--acent-color);
+}
+
+
+
+/* --------------------HERO-------------------- */
 .visually-hidden{
  position: absolute;
   white-space: nowrap;
@@ -266,11 +264,6 @@ color: var(--ouwer-text-color);
     color: var(--secondary-text-color);
     text-transform: uppercase;
 }
-.btn :hover,
-.btn :focus{
-    background: #2196F3;
-    color: #2196f3;
-}
 
 
 .subject-btn{
@@ -295,8 +288,14 @@ cursor: pointer;
 
 
 }
+.btn:hover,
+.btn:focus{
+    background: #2196F3;
+    color:var(--buttons-port-color);
+}
+/* ---------------------ПЕРЕВАГИ--------------- */
 .conteiner-teem{
-    padding-top: 91px;
+    padding-top: 94px;
     padding-bottom: 94px;
    
 }
@@ -443,10 +442,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
    justify-content: center;
 
 }
-
-.soc-link-teem{
+.soc-item-teem{
     width: 44px;
     height: 44px; 
+}
+.soc-link-teem{
+   width: 100%;
+   height: 100%;
     background-color: var(--background-color);
     border-radius: 50%;
     display: flex;
