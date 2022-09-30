@@ -153,7 +153,8 @@ color: var(--main-text-color);
 .header-mail{
 
    padding: 32px 0;
-display: inline-block;
+display: flex;
+gap: 10px;
 align-items: center;
 font-weight: 500;
 font-size: 14px;
@@ -164,7 +165,8 @@ color: var(--ouwer-text-color);
 
 .header-tel{
    padding: 32px 0;
-   display: inline-block;
+   display: flex;
+   gap: 10px;
   
 font-weight: 500;
 font-size: 14px;
@@ -205,9 +207,7 @@ color: var(--ouwer-text-color);
 }
 
 .header-icon{
-   display: inline-block;
-   justify-content: center;
-   margin-right: 10px;
+  
     fill: var(--ouwer-text-color);
 
 
