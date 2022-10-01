@@ -133,7 +133,11 @@ html{
      margin-right: 0;
        
 }
-
+.header-list :hover,
+.header-list :focus{
+     color: var(--acent-color);
+     cursor: pointer;
+}
 
 
 
@@ -175,7 +179,7 @@ letter-spacing: 0.02em;
 color: var(--ouwer-text-color);
 
 }
-.header-tel:hover,
+/* .header-tel:hover,
 .header-tel:focus{
      color: var(--acent-color);
      cursor: pointer;
@@ -186,10 +190,10 @@ color: var(--ouwer-text-color);
      color: var(--acent-color);
      cursor: pointer;
     
-}
-.current{
+} */
+/* .current{
     color: var(--acent-color);
-}
+} */
 
 
 .list{
@@ -208,7 +212,7 @@ color: var(--ouwer-text-color);
 
 .header-icon{
   
-    fill: var(--ouwer-text-color);
+    fill: currentColor;
 
 
 }
@@ -243,9 +247,12 @@ color: var(--ouwer-text-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: cover;
     text-align: center;
     padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
   
   
 }
@@ -398,7 +405,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 
 .teem-conteiner{
     padding-top:30px ;
-    padding-bottom:0;
+    padding-bottom:30px;
    
 }
 
@@ -427,18 +434,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     letter-spacing: 0.03em;
     color: var(--ouwer-text-color);
 }
-.soc-teem{
-    padding: 0 0;
-    margin-top: 16px;
-    margin-bottom: 30px;
- 
-}
+
 .icon-nav{
    display: flex;
    gap: 10px;
-   padding: 0 0;
+   
    margin-top: 16px;
-   margin-bottom: 30px;
+   
    justify-content: center;
 
 }
@@ -467,9 +469,7 @@ color: var(--background-color);
 }
 
    /* --------------------------------------- ПОСТІЙНІ КЛІЄНТИ-------------------- */
-.client{
-    padding-bottom: 94px;
-}
+
 .client-text{
     margin-bottom: 50px;
 
@@ -570,7 +570,7 @@ color:  var(--secondary-text-color);
 }
 .footer-conteiner{
     display: flex; 
-    align-items: center;
+    align-items: baseline;
   
 }
 .footer-info{
